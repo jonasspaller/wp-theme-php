@@ -1,0 +1,28 @@
+/*
+Theme Name: WP Theme PHP
+Author: Jonas Spaller
+Theme URI: https://github.com/jonasspaller/wp-theme-php
+Author URI: https://github.com/jonasspaller
+Description: A simple test theme for wordpress based on the classic php approach.
+Version: 0.1.0
+Tested up to: 6.0.1
+Requires PHP: 7.0
+Text Domain: js-wp-php
+*/
+
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	min-height: 100vh;
+}
+
+body {
+	line-height: 1;
+	min-height: 100vh;
+}
