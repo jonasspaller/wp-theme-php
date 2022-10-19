@@ -15,6 +15,7 @@ Text Domain: js-wp-php
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	outline: none;
 }
 
 html {
@@ -24,12 +25,37 @@ html {
 }
 
 body {
-	line-height: 1;
+	line-height: 1.5;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	font-family: sans-serif;
 }
 
 main {
 	flex-grow: 1;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+#skip-to-main-content-link {
+	position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border: 2px solid #000;
+	border-top: none;
+    padding: 0.5rem 1rem;
+	transition: transform 300ms ease;
+}
+
+#skip-to-main-content-link:focus {
+	transform: translate(-50%, 0);
+}
+
+a {
+	text-decoration: none;
 }

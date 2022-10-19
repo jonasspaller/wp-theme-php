@@ -2,7 +2,16 @@
 
 		<footer id="site-footer">
 
-			<p>footer</p>
+			<nav id="footer-navigation">
+				<?php
+					wp_nav_menu(
+						array(
+							'menu_class' => 'nav-menu',
+							'theme_location' => 'footer',
+						)
+					);
+				?>
+			</nav>
 
 		</footer>
 

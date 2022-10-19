@@ -8,7 +8,7 @@
 		while(have_posts()){
 
 			the_post();
-			get_template_part('template-parts/loop-content');
+			get_template_part('template-parts/content');
 		}
 
 		// show pagination
@@ -16,7 +16,7 @@
 	} else {
 
 		// no posts to display
-		get_template_part('template-parts/loop-content', 'none');
+		get_template_part('template-parts/content', 'none');
 	}
 
 	get_sidebar();
