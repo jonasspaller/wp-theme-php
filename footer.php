@@ -1,5 +1,3 @@
-		</main>
-
 		<footer id="site-footer">
 
 			<nav id="footer-navigation">
@@ -8,6 +6,8 @@
 						array(
 							'menu_class' => 'nav-menu',
 							'theme_location' => 'footer',
+							'container' => 'ul',
+							'depth' => 1
 						)
 					);
 				?>

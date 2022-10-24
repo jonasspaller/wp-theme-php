@@ -30,6 +30,8 @@
 							array(
 								'menu_class' => 'nav-menu',
 								'theme_location' => 'primary',
+								'container' => 'ul',
+								'depth' => 2
 							)
 						);
 					?>
