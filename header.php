@@ -24,7 +24,7 @@
 		
 			<?php if (has_nav_menu('primary')): ?>
 			
-				<nav id="site-navigation">
+				<nav id="site-navigation" role="navigation">
 					<?php
 						wp_nav_menu(
 							array(

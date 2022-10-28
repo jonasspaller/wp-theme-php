@@ -1,0 +1,61 @@
+/*
+Theme Name: WP Theme PHP
+Author: Jonas Spaller
+Theme URI: https://github.com/jonasspaller/wp-theme-php
+Author URI: https://github.com/jonasspaller
+Description: A simple test theme for wordpress based on the classic php approach.
+Version: 0.1.0
+Tested up to: 6.0.1
+Requires PHP: 7.0
+Text Domain: js-wp-php
+*/
+
+@use "foundation";
+@use "navs";
+
+body {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas:
+		"header header"
+		"main-content sidebar"
+		"footer footer";
+}
+
+#skip-to-main-content-link {
+	background-color: white;
+	position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border: 2px solid #000;
+	border-top: none;
+    padding: 0.5rem 1rem;
+	transition: transform 300ms ease;
+	z-index: 99;
+}
+
+#skip-to-main-content-link:focus {
+	transform: translate(-50%, 0);
+}
+
+#site-header {
+	grid-area: header;
+	background-color: red;
+}
+
+main {
+	grid-area: main-content;
+	background-color: green;
+}
+
+#sidebar {
+	grid-area: sidebar;
+	background-color: violet;
+}
+
+#site-footer {
+	grid-area: footer;
+	background-color: gray;
+}
+

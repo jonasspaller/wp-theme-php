@@ -23,6 +23,8 @@
 </main>
 
 <?php
-	get_sidebar();
+	if (is_active_sidebar('primary')) {
+		get_sidebar();
+	}
 	get_footer();
 ?>

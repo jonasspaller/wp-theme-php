@@ -1,0 +1,31 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+}
+
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+	font-family: sans-serif;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin-left: 1rem;
+}
